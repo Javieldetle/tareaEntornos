@@ -50,7 +50,7 @@ public class DepositoCombustibleTest {
 	@Test
 	public void testConsumir() {
 		DepositoCombustible tank = new DepositoCombustible(40.0,40.0);
-		double amount = 5.0;
+		double amount = 0.0;
 		if( tank.consumir(amount) != tank.getDepositoMax()){
 		System.out.println( " el deposito esta consumiento " + amount + " lt");
 		}else 
