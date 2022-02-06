@@ -42,14 +42,19 @@ public class DepositoCombustibleTest {
 		DepositoCombustible tank = new DepositoCombustible(30.0, 04.0);
 		boolean lleno = false;
 		if( tank.fill(6.0) == tank.getDepositoNivel()){
-		System.out.println(lleno+ "el deposito esta parcial");
+		System.out.println(lleno+ " el deposito esta parcial");
 		}else lleno = true;
 		System.out.println("el deposito esta lleno");
 	}
 
 	@Test
 	public void testConsumir() {
-		fail("Not yet implemented");
+		DepositoCombustible tank = new DepositoCombustible(40.0,40.0);
+		double amount = 5.0;
+		if( tank.consumir(amount) != tank.getDepositoMax()){
+		System.out.println( " el deposito esta consumiento " + amount + " lt");
+		}else 
+		System.out.println("el deposito esta completo");
 	}
 
 }
