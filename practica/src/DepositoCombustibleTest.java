@@ -41,7 +41,7 @@ public class DepositoCombustibleTest {
 	public void testFill() {
 		DepositoCombustible tank = new DepositoCombustible(30.0, 04.0);
 		boolean lleno = false;
-		if( tank.fill(36.0) == tank.getDepositoNivel()){
+		if( tank.fill(6.0) == tank.getDepositoNivel()){
 		System.out.println(lleno+ "el deposito esta parcial");
 		}else lleno = true;
 		System.out.println("el deposito esta lleno");
