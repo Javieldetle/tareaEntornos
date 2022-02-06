@@ -87,10 +87,11 @@ public class DepositoCombustible {
 	 * <hr>
 	 * 
 	 * @param amount Cantidad de combustible que añade
+	 * @return 
 	 * 
 	 */
-	public void fill(double amount) {
-		depNivel = depNivel + amount;
+	public double fill(double amount) {
+		return depNivel = depNivel + amount;
 	}
 
 	/**
